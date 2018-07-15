@@ -214,7 +214,8 @@ public class WebDriverServiceImpl extends WebDriverListener implements WebDriver
 	}
 
 	public void verifyDisplayed(WebElement ele) {
-		System.out.println(ele.isDisplayed());
+		boolean displayed = ele.isDisplayed();
+		System.out.println(displayed);
 	}
 
 	public void switchToWindow(int index) {
