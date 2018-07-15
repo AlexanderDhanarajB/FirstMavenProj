@@ -226,8 +226,8 @@ public class WebDriverServiceImpl extends WebDriverListener implements WebDriver
 	}
 
 	public void switchToFrame(WebElement ele) {
-		// TODO Auto-generated method stub
-
+		reportSteps("Swithcing to Frame", "Pass");
+		driver.switchTo().frame(ele);
 	}
 
 	public void acceptAlert() {
