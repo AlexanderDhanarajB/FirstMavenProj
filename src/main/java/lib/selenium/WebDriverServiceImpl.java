@@ -214,8 +214,8 @@ public class WebDriverServiceImpl extends WebDriverListener implements WebDriver
 	}
 
 	public void verifyDisplayed(WebElement ele) {
-		// TODO Auto-generated method stub
-
+		boolean displayed = ele.isDisplayed();
+		System.out.println(displayed);
 	}
 
 	public void switchToWindow(int index) {
