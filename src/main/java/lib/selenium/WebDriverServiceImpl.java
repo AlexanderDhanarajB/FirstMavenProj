@@ -50,7 +50,7 @@ public class WebDriverServiceImpl extends WebDriverListener implements WebDriver
 		}
 		return null;
 	}
-	
+
 	public int getElementsSize(String locator, String locValue)
 	{
 		try {
@@ -144,7 +144,7 @@ public class WebDriverServiceImpl extends WebDriverListener implements WebDriver
 			return false;
 		}
 	}
-	
+
 	public boolean verifyPartialTitle(String expectedTitle) {
 		//		Verify Exact text is matching with the expectedText value
 		try {
@@ -214,8 +214,7 @@ public class WebDriverServiceImpl extends WebDriverListener implements WebDriver
 	}
 
 	public void verifyDisplayed(WebElement ele) {
-		// TODO Auto-generated method stub
-
+		System.out.println(ele.isDisplayed());
 	}
 
 	public void switchToWindow(int index) {
@@ -223,7 +222,7 @@ public class WebDriverServiceImpl extends WebDriverListener implements WebDriver
 		List<String> listAllWin = new ArrayList<String>();
 		listAllWin.addAll(allWin);
 		driver.switchTo().window(listAllWin.get(index));
-//		reportSteps("Switched to windows with index: "+ index, "Pass");
+		//		reportSteps("Switched to windows with index: "+ index, "Pass");
 	}
 
 	public void switchToFrame(WebElement ele) {
@@ -270,7 +269,7 @@ public class WebDriverServiceImpl extends WebDriverListener implements WebDriver
 		objAction.moveToElement(eleTarget).perform();
 		reportSteps("Mouse over done on "+eleTarget, "Pass");
 	}
-	
+
 	public void mouseClick(WebElement eleTarget)
 	{
 		Actions objAction = new Actions(driver);
