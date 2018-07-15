@@ -151,6 +151,7 @@ public class WebDriverServiceImpl extends WebDriverListener implements WebDriver
 			if (driver.getTitle().contains(expectedTitle))
 			{
 				reportSteps("Expected title is present", "Pass");
+				System.out.println("Adding sysout statement");
 				return true;
 			}
 			else
